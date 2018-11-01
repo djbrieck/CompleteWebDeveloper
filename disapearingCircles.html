@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+    .circle {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .red{
+    background-color:red;
+    }
+    .yellow{
+    background-color:yellow;
+    }
+    .blue{
+    background-color:blue;
+    }
+
+    </style>
+  </head>
+
+  <body>
+
+      <div style="text-align:center">
+        <h1>Disapearing Circles</h1>
+        <span id="redcir" class="circle red"></span>
+        <span id="yelocir" class="yellow circle"></span>
+        <span id="blucir" class="blue circle"></span>
+      </div>
+
+      <button type="button" id="showAll" name="showAllButton">Show hidden Circles</button>
+
+<script type="text/javascript">
+
+    document.getElementById("redcir").onclick = function (){
+      document.getElementById("redcir").style.visibility = "hidden";
+    }
+
+
+    document.getElementById("yelocir").onclick = function (){
+      document.getElementById("yelocir").style.visibility = "hidden";
+    }
+
+    document.getElementById("blucir").onclick = function (){
+      document.getElementById("blucir").style.visibility = "hidden";
+    }
+
+  document.getElementById("showAll").onclick = function () {
+    document.getElementById("redcir").style.visibility = "visible";
+    document.getElementById("blucir").style.visibility = "visible";
+    document.getElementById("yelocir").style.visibility = "visible";
+
+  }
+
+
+</script>
+
+
+  </body>
+</html>
